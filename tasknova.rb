@@ -5,21 +5,21 @@
 class Tasknova < Formula
   desc "A CLI task manager for organizing tasks and notes"
   homepage "https://github.com/joaaomanooel/cli-tasknova"
-  version "1.0.16"
+  version "1.0.18"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joaaomanooel/cli-tasknova/releases/download/v1.0.16/tasknova_1.0.16_macOS_amd64.tar.gz"
-      sha256 "2ca73cd34aa50e28e91353e63ce248b74d6126d9ed1ea2c02aebe2823da8ec57"
+      url "https://github.com/joaaomanooel/cli-tasknova/releases/download/v1.0.18/tasknova_1.0.18_macOS_amd64.tar.gz"
+      sha256 "58188cbd3e0edd9251962a530ee19a901e03d2280e11ee96711e54a456f537a7"
 
       def install
         bin.install "tasknova"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/joaaomanooel/cli-tasknova/releases/download/v1.0.16/tasknova_1.0.16_macOS_arm64.tar.gz"
-      sha256 "45325bd9005ca0f0359f4cadb5873c84430f47e3dc995ecef60dbb2c6d84370d"
+      url "https://github.com/joaaomanooel/cli-tasknova/releases/download/v1.0.18/tasknova_1.0.18_macOS_arm64.tar.gz"
+      sha256 "e0e5ec8f042e3dd9d71e0c288de4801ed071aa7bb2f6bc7489cbdf26a96daa53"
 
       def install
         bin.install "tasknova"
@@ -29,15 +29,15 @@ class Tasknova < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/joaaomanooel/cli-tasknova/releases/download/v1.0.16/tasknova_1.0.16_linux_amd64.tar.gz"
-      sha256 "b0cf08c8e42d6eb3dba397929ab5c057c72f410f124b42db6d5ac0b69e3bae36"
+      url "https://github.com/joaaomanooel/cli-tasknova/releases/download/v1.0.18/tasknova_1.0.18_linux_amd64.tar.gz"
+      sha256 "82d4133fa269596ecf79fec7decfdde62c75c27766f844bb8f0a11f9dc787762"
       def install
         bin.install "tasknova"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/joaaomanooel/cli-tasknova/releases/download/v1.0.16/tasknova_1.0.16_linux_arm64.tar.gz"
-      sha256 "8e3aac37c3ce684d5c1a3b8aaa4c34e5bb0872617b751a3292a97800cab537bc"
+      url "https://github.com/joaaomanooel/cli-tasknova/releases/download/v1.0.18/tasknova_1.0.18_linux_arm64.tar.gz"
+      sha256 "88184ea798128b6ec2031d507b8d7f5dcc062904ac405e1d2b281443e629e8f1"
       def install
         bin.install "tasknova"
       end
